@@ -5,15 +5,18 @@
 The system combines a fine-tuned **EfficientNetB0** CNN with a Flask backend, user authentication, and persistent scan history.
 
 ---
-##  Images
 
-![User Interface](https://imgur.com/UlR3fMh)
+## 🖼️ Images
 
+### User Interface
+![User Interface](https://i.imgur.com/UlR3fMh.png)
 
-![Analysis Result](https://imgur.com/wqvoAH7)
+### Analysis Result
+![Analysis Result](https://i.imgur.com/wqvoAH7.png)
 
+### Scan History
+![Scan History](https://i.imgur.com/q9uabok.png)
 
-![Scan History](https://imgur.com/q9uabok)
 
 ## 🚀 Features
 
