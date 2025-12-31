@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="row justify-content-center">
+    <div class="col-md-8">
+        <div class="card shadow border-0">
+            <div class="card-body text-center">
+                <h2 class="mb-4">Analysis Result</h2>
+                <img src="{{ url_for('static', filename='uploads/' + filename) }}" class="img-fluid rounded mb-4 shadow-sm" style="max-height: 400px;">
+                
+                <div class="alert {% if 'healthy' in disease.lower() %}alert-success{% else %}alert-danger{% endif %} py-3">
+                    <h3 class="m-0">{{ disease.replace('___', ' ').replace('_', ' ') }}</h3>
+                    <p class="mb-0">Confidence: <strong>{{ confidence|round(2) }}%</strong></p>
+                </div>
+
+                <div class="mt-4 p-3 bg-light rounded text-start">
+                    <h5>🛠️ Recommended Advice:</h5>
+                    <p>{{ advice }}</p>
+                </div>
+
+                <a href="{{ url_for('index') }}" class="btn btn-success mt-4 px-5">New Scan</a>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
